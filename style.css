@@ -496,12 +496,17 @@ justify-content: space-evenly;}
 
     .container{
         width: 90%;
+        display: flex; s
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
     }
         .container H2{
-        font-size: 17px;
+        font-size: 16px;
     }
     .par{
-        font-size: 10px;
+        font-size: 9px;
     }
     ul li a{
         font-size:10px ;
