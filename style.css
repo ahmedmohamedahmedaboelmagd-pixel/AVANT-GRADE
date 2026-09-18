@@ -14,7 +14,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    overflow: hidden;
 }
 .section1{
     background-image:url(6ab1a7a6-f441-4d2a-8bee-d1bdb46a0597.jfif);
@@ -23,6 +22,9 @@ body{
     height: 800px;
     background-position: center;
     border-radius:0px 0px 20px 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 .nav{
@@ -37,6 +39,7 @@ body{
     width: 100%;
     border-bottom: 2px solid black;
     position: fixed;
+    top: 0;
     z-index: 1;
 }
 .logo{
@@ -488,11 +491,11 @@ justify-content: space-evenly;}
     transform: scale(0.9);
 }
 }
-@media(min-width:350px) and (max-width:600px){
+@media(max-width:600px){
 
 
     .container{
-        width: 390PX;
+        width: 90%;
     }
         .container H2{
         font-size: 20px;
@@ -515,7 +518,7 @@ justify-content: space-evenly;}
         align-items: center;
     }
   .row{
-    width: 100%;
+    width: 90%;
     height: 50%;
     box-shadow: none;
 }
@@ -524,7 +527,7 @@ justify-content: space-evenly;}
     bottom: 20px;
 }
 .column{
-    width: 100%;
+    width: 90%;
     height: 100%;
 display: flex;
 flex-direction: column;
@@ -534,16 +537,26 @@ justify-content: space-evenly;
     height:100%;
     box-shadow: none;
     width: 100%;
-}  .policy{
+} 
+footer{
+    width: 99%;
+}
+.policy{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    height: auto;
+    
     
 }
 .policy p{
-    width: 100px;
+    width: auto;
+    gap: 0;
+    padding: 0;
+    margin: 0;
 }
 .policy p a{
     font-size: 10px;
